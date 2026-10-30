@@ -1,41 +1,43 @@
-# Reliability and Infrastructure Implications of Electric Cooking Adoption in Semi-Arid Rural Mini-Grids: A Sudan Case Study
+# Electric Cooking and Solar Mini-Grid Reliability in Sudan
+
+**Energy systems | Scenario modelling | Infrastructure adequacy**
 
 ## Overview
 
-This project presents a deterministic techno-economic stress test of electric cooking adoption in a representative rural solar mini-grid system in semi-arid Sudan.
+A deterministic simulation study exploring how electric-cooking adoption could affect the capacity adequacy of a representative rural solar mini-grid in semi-arid Sudan.
 
-The objective is to evaluate how increasing electric cooking adoption affects:
+The analysis compares adoption scenarios of **0%, 20% and 40%**, examining changes in demand, unmet energy and potential PV and battery scaling requirements.
 
-- System reliability
-- Peak demand escalation
-- Battery stress
-- Infrastructure scaling requirements
+## Modelling Approach
 
-The model integrates:
+- NASA POWER solar-resource inputs
+- Synthetic, normalized hourly electricity demand profiles
+- Electric-cooking demand scenarios
+- Battery state-of-charge simulation
+- Comparative system-sizing and reliability analysis
 
-- NASA POWER solar irradiance data
-- Synthetic but normalized rural load profiles
-- Deterministic battery state-of-charge simulation
-- Scenario-based adoption analysis (0%, 20%, 40%)
+## Main Observations
 
-## Research Scope
+- At 20% adoption, simulated reliability deterioration is comparatively modest.
+- At 40% adoption, unmet energy rises substantially under the baseline configuration.
+- Expanding storage alone does not fully address higher-demand scenarios.
+- Coordinated PV and battery expansion provides a more effective adequacy response in the model.
 
-The study uses modelled demand profiles and deterministic assumptions rather than observed household adoption behaviour. Results describe simulated system adequacy, not measured field performance.
-
-## Key Findings
-
-- At 20% adoption, reliability degradation is modest and can be restored with minor battery scaling.
-- At 40% adoption, unmet energy increases nonlinearly.
-- Storage scaling alone is insufficient at higher adoption levels.
-- Combined PV and storage scaling is required beyond a transition threshold.
+These are **model-based findings**, not measured household adoption or field performance.
 
 ## Repository Structure
 
-- `/src` — Model scripts
-- `/data` — Input and generated datasets
-- `/figures` — Generated plots
-- `/report` — Final technical brief (PDF)
+| Path | Contents |
+| --- | --- |
+| `src/` | Solar, load, cooking-demand and battery simulation scripts |
+| `data/` | Input series and generated scenario outputs |
+| `figures/` | Analysis figures |
+| `README.md` | Study overview |
 
-## Disclaimer
+## Limitations
 
-This analysis evaluates system-level capacity adequacy under deterministic resource and demand assumptions. It does not model stochastic equipment failures or distribution-level contingency events.
+Results depend on deterministic solar and demand assumptions. The analysis does not establish causal effects on fuel choice, observed household behaviour, equipment failure rates or distribution-network contingencies.
+
+## Author
+
+Shamseldin Abdelrahim
