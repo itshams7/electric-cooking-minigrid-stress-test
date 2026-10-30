@@ -18,6 +18,10 @@ The model integrates:
 - Deterministic battery state-of-charge simulation
 - Scenario-based adoption analysis (0%, 20%, 40%)
 
+## Research Scope
+
+The study uses modelled demand profiles and deterministic assumptions rather than observed household adoption behaviour. Results describe simulated system adequacy, not measured field performance.
+
 ## Key Findings
 
 - At 20% adoption, reliability degradation is modest and can be restored with minor battery scaling.
